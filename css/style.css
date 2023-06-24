@@ -1,0 +1,332 @@
+body {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  -ms-overflow-style: none;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+@font-face {
+  font-family: 'cambriafnt';
+  src: url('../Cambria.ttf');
+}
+
+.toppadding {
+  background-color: white;
+  height: 2%;
+}
+
+.toppadding2 {
+  margin-top: 1%;
+  background-color: white;
+  height: 2%;
+}
+
+.toppadding3 {
+  background-color: white;
+  height: 2%;
+}
+
+.border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 13%;
+}
+
+.border .logo {
+  margin-top: 0.2%;
+  width: 140%;
+  height: 140%;
+  object-fit: contain;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  height: 35%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-left {
+  left: 20%;
+}
+
+.arrow-right {
+  right: 20%;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+  opacity: 1;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  color: white;
+  opacity: 0;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
+.slide-text.active {
+  opacity: 1;
+}
+
+.info {
+  font-family: "cambriafnt";
+  text-align: center;
+}
+
+.infotitle {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff; /* White color */
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
+.infotext {
+  font-size: 24px;
+  font-style: italic;
+  color: #ffffff; /* White color */
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
+.podcast-section {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.section-header {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.podcast-image {
+  width: 40%;
+  height: 0;
+  padding-bottom: 22.5%; /* 9:16 aspect ratio (16 / 9 * 100) */
+  background-color: #ffffff;
+  margin: 2% 30%;
+  position: relative;
+}
+
+
+.video-embed {
+  width: 92%;
+  height: 92%;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+
+.meet-the-team-section {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.meet-the-team-section .section-header {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.team-squares {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.team-squares .square {
+  width: 7%;
+  padding-top: 7%;
+  background-color: #ffffff;
+  margin: 0 2%;
+  position: relative;
+}
+
+.team-squares .square img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.team-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.team-text .text-area {
+  width: 7%;
+  margin: 0 2%;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+  font-style: italic;
+  height: 50px; /* Adjust the height as needed */
+}
+
+.video-embed {
+  width: 92%;
+  height: 92%;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-section .media-header {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff; /* White color */
+  text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+}
+
+.media .square {
+  width: 4%;
+  padding-top: 4%;
+  background-color: #ffffff;
+  margin: 0 1% 0 0;
+  position: relative;
+}
+
+.media .square:last-child {
+  margin-right: 0; /* Remove right margin for the last square */
+}
+
+.media-section .media .square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foot {
+  margin-top: 100px;
+  height: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footi {
+  color: #ffffff;
+  font-family: "cambriafnt";
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  font-size: clamp(0em, 8vw, 1.5em);
+  margin-top: 1%;
+}
+
+.prefoot {
+  height: 200px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  /* Center arrows on mobile devices */
+  .arrow img {
+    width: 50%;
+    height: 50%;
+  }
+  .arrow-left {
+    left: 10%;
+  }
+
+  .arrow-right {
+    right: 10%;
+  }
+
+  .infotext {
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff; /* White color */
+    text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+  }
+
+  .infotitle {
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff; /* White color */
+    text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+  }
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 0 10px #ffffff; /* Neon glow effect */
+  }
+}
